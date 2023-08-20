@@ -9,24 +9,22 @@
       </button>
     </div>
     <nav class="menu translate-y-[-150%] lg:translate-y-0">
-      <a href="#home" class="hover:text-primary transition">Home</a>
+      <!-- <a href="#home" class="hover:text-primary transition">Home</a>
       <a href="#application" class="hover:text-primary transition">Application</a>
       <a href="#about" class="hover:text-primary transition">About</a>
       <a href="#testimonial" class="hover:text-primary transition">Testimonial</a>
-      <a href="#contact" class="hover:text-primary transition">Contact</a>
-      <a href="/somepage" class="hover:text-primary transition">Some Page</a>
+      <a href="#contact" class="hover:text-primary transition">Contact</a> -->
 
       <!-- show on mobile, hide on desktop -->
-      <a href="#" class="block lg:hidden hover:text-primary transition">Log in</a>
-      <a href="#" class="block lg:hidden px-4 py-2.5 rounded-md bg-primary hover:bg-primary/90 transition">Create Account</a>
+      <a href="{{ .Site.Params.Log_in_url }}" class="block lg:hidden hover:text-primary transition">Log in</a>
+      <a href="{{ .Site.Params.Try_now_url }}" class="block lg:hidden px-4 py-2.5 rounded-md bg-primary hover:bg-primary/90 transition">Create Account</a>
 
     </nav>
 
     <!-- show on desktop, hide on mobile -->
     <div class="hidden lg:flex items-center gap-9">
-      <a href="#" class="hover:text-primary transition">Log in</a>
-      <a href="#" class="block px-4 py-2.5 rounded-md bg-primary hover:bg-primary/90 transition">Create Account</a>
+      <a href="{{ .Site.Params.Log_in_url }}" class="hover:text-primary transition">Log in</a>
+      <a href="{{ .Site.Params.Try_now_url }}" class="block px-4 py-2.5 rounded-md bg-primary hover:bg-primary/90 transition">Create Account</a>
     </div>
   </div>
 </header>
-
