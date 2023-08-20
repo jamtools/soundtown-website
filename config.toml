@@ -27,6 +27,7 @@ pygmentsUseClasses = true
 
   learn_more_url = "#"
   try_now_url = "https://soundtown.app"
+  log_in_url = "https://soundtown.app/login"
 
   app_image_on_desktop = "/assets/images/app.webp"
   app_image_on_mobile = "/assets/images/app-mobile.webp"
